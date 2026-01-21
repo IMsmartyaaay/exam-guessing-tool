@@ -48,8 +48,9 @@ with col1:
         unsafe_allow_html=True
     )
 
-   if calc_clicked:
-    st.switch_page("pages/Calculator.py")  # ✅
+      if calc_clicked:
+        st.switch_page("pages/calculator.py")
+
 
 
 
@@ -80,6 +81,7 @@ with col2:
 
 this is the code. 
 fix plz
+
 
 
 
