@@ -79,8 +79,8 @@ with col2:
     if guide_clicked:
         st.switch_page("pages/Guide.py")
 
-this is the code. 
-fix plz
+
+
 
 
 
