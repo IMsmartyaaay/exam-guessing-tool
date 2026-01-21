@@ -3,7 +3,7 @@ import streamlit as st
 st.title("GUIDE")
 st.write("")
 
-c1, sep1, c2, sep2, c3 = st.columns([1, 0.05, 1, 0.05, 1])
+c1, c2, c3 = st.columns([1, 1, 1])
 
 with c1:
     st.markdown(
@@ -25,11 +25,7 @@ with c1:
     unsafe_allow_html=True
     )
 
-with sep1:
-    st.markdown(
-        "<div style='border-left:1px solid #cccccc; min-height:100vh;'></div>",
-        unsafe_allow_html=True
-    )
+
 
 with c2:
     st.markdown(
@@ -52,11 +48,6 @@ with c2:
     unsafe_allow_html=True
     )
 
-with sep2:
-    st.markdown(
-        "<div style='border-left:1px solid #cccccc; min-height:100vh;'></div>",
-        unsafe_allow_html=True
-    )
 
 with c3:
     st.markdown(
@@ -76,3 +67,4 @@ with c3:
     """,
     unsafe_allow_html=True
     )
+
