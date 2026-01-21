@@ -49,7 +49,7 @@ with col1:
     )
 
    if calc_clicked:
-    st.switch_page("pages/calculator.py")  # ✅
+    st.switch_page("pages/Calculator.py")  # ✅
 
 
 
@@ -76,10 +76,11 @@ with col2:
     )
 
     if guide_clicked:
-        st.switch_page("pages/guide.py")
+        st.switch_page("pages/Guide.py")
 
 this is the code. 
 fix plz
+
 
 
 
