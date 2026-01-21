@@ -1,5 +1,6 @@
 import streamlit as st
 import math
+import pandas as prob
 
 st.title("Exam Guessing Probability Calculator")
 
@@ -47,8 +48,18 @@ st.write(f"Probability of losing marks: {prob_loss*100:.2f}%")
 
 st.write("### Feasible outcomes")
 
-st.write("Correct | Net Score | Probability")
 
-for x, score, prob_x in distribution:
-    if prob_x >= 0.035:
-        st.write(f"{x} | {score} | {prob_x*100:.2f}%")
+
+for x,score,prob_x in distribution :
+    if prob x >= 0.03
+        rows.append({
+                "Correct": x,
+                "Net Score": score,
+                "Probability (%)": round(prob_x * 100, 2)
+        })
+         
+df = prob.DataFrame(rows)
+
+st.subheader("Feasible outcomes")
+st.table(df)
+
