@@ -22,7 +22,7 @@ else:
 from math import comb
 
 distribution = []
-
+rows = []
 prob_gain = 0
 prob_loss = 0
 prob_even = 0
@@ -50,16 +50,17 @@ st.write("### Feasible outcomes")
 
 
 
-for x,score,prob_x in distribution :
-    if prob x >= 0.03
+for x, score, prob_x in distribution:
+    if prob_x >= 0.03:   # threshold
         rows.append({
-                "Correct": x,
-                "Net Score": score,
-                "Probability (%)": round(prob_x * 100, 2)
+            "Correct": x,
+            "Net Score": score,
+            "Probability (%)": round(prob_x * 100, 2)
         })
          
 df = prob.DataFrame(rows)
 
 st.subheader("Feasible outcomes")
 st.table(df)
+
 
