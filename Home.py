@@ -1,5 +1,6 @@
 import streamlit as st
 
+# ---- GLOBAL BUTTON HEIGHT ----
 st.markdown(
     """
     <style>
@@ -10,7 +11,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
 
 st.set_page_config(page_title="Exam Guessing Tool", layout="centered")
 
@@ -37,12 +37,14 @@ with col1:
         """
         <div style="
             pointer-events:none;
-            text-align:center;
-            margin-top:-150px;
+            height:140px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
         ">
             <span style="font-size:90px;">🧮</span>
-            <p></p>
-            <p style="font-size:30px;"><b>Calculator</b></p>
+            <p style="font-size:30px; margin:0;"><b>Calculator</b></p>
         </div>
         """,
         unsafe_allow_html=True
@@ -63,12 +65,14 @@ with col2:
         """
         <div style="
             pointer-events:none;
-            text-align:center;
-            margin-top:-150px;
+            height:140px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
         ">
             <span style="font-size:90px;">📓</span>
-            <p></p>
-            <p style="font-size:30px;"><b>Guide</b></p>
+            <p style="font-size:30px; margin:0;"><b>Guide</b></p>
         </div>
         """,
         unsafe_allow_html=True
@@ -76,6 +80,8 @@ with col2:
 
     if guide_clicked:
         st.switch_page("pages/guide.py")
+
+
 
 
 
