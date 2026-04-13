@@ -46,7 +46,7 @@ st.write(f"Probability of gaining marks: {prob_gain*100:.2f}%")
 st.write(f"Probability of breaking even: {prob_even*100:.2f}%")
 st.write(f"Probability of losing marks: {prob_loss*100:.2f}%")
 
-st.write("### Feasible outcomes")
+
 
 
 
