@@ -65,18 +65,15 @@ st.table(df)
 
 import matplotlib.pyplot as plt
 
-# Prepare data for plotting
-x_vals = [x for x, _, _ in distribution]
-probs = [prob_x for _, _, prob_x in distribution]
+scores = [score for _, score, _ in distribution]
+probs = [prob_x * 100 for _, _, prob_x in distribution]
 
-# Create bar chart
 fig, ax = plt.subplots()
-ax.bar(x_vals, probs)
+ax.bar(scores, probs)
 
-ax.set_xlabel("Number of Correct Answers")
-ax.set_ylabel("Probability")
-ax.set_title("Probability Distribution of Outcomes")
+ax.set_xlabel("Net Score")
+ax.set_ylabel("Probability (%)")
+ax.set_title("Score Distribution")
 
-# Show in Streamlit
 st.pyplot(fig)
 
