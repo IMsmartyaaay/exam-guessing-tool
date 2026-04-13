@@ -34,11 +34,10 @@ with c2:
         <p style="font-size:22px;">BITSAT</p>
         <ul style="font-size:16px;">
             <li>+3 / −1 marking scheme is less forgiving.</li>
-            <li>Blind guessing can quickly reduce score.</li>
+            <li>Uneducated guesses to be avoided in normal cases</li>
             <li>Guessing is safer only after eliminating two options.</li>
             <li>Attempting all unlocks bonus section.</li>
-	    <li>So useful to attempt all only if wish to attempt bonus </li>
-            <li>Time pressure makes excessive guessing risky.</li>
+	    <li>So useful to attempt all if you wish to attempt bonus </li>
         </ul>
         <p style="font-size:14px;">
         Bottom line: guessing requires caution and strong time control.
