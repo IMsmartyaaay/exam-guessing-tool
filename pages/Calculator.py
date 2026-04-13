@@ -63,17 +63,5 @@ df = prob.DataFrame(rows)
 st.subheader("Feasible outcomes")
 st.table(df)
 
-import matplotlib.pyplot as plt
 
-scores = [score for _, score, _ in distribution]
-probs = [prob_x * 100 for _, _, prob_x in distribution]
-
-fig, ax = plt.subplots()
-ax.bar(scores, probs)
-
-ax.set_xlabel("Net Score")
-ax.set_ylabel("Probability (%)")
-ax.set_title("Score Distribution")
-
-st.pyplot(fig)
 
